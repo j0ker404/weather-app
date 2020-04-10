@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 100%;
+    color: azure;
+
+
+}
+
+body {
+    background-color: rgb(27, 34, 34);
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+}
+
+
+#title {
+    flex: 25%;
+    font-size: 2.5em;
+    margin: 0 auto;
+    padding: 50px 0px;
+    padding-bottom: 2px;
+    text-align: center;
+}
+
+
+.search-container {
+    flex: 25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    width: 100%;
+}
+
+.in {
+    width: 100%;
+    height: auto;
+    text-align: center;
+}
+
+#search-label {
+    margin: 0 15px;
+    text-align: center;
+}
+
+#searchbar {
+    word-wrap: break-word;
+    hyphens: auto;
+
+    margin: 1.5em 0;
+    padding: 0px 10px;
+    width: 55%;
+    min-height: 3.5em;
+    
+    
+
+    text-align: center;
+    font-size: 1.2em;;
+    background-color: inherit;
+
+    /* border: none; */
+    border: 2px solid gray;
+
+
+
+
+    /* transition: border ease 3s; */
+    transition-property: border;
+    transition-duration: 2s;
+    transition-timing-function: ease-in-out;
+    /* transition-delay: 1s; */
+
+    
+}
+
+#searchbar:focus {
+    outline: none;
+
+    
+    border-radius: 15px;
+    border-color: aliceblue;
+    /* border-bottom-color: chartreuse; */ 
+
+
+    /* transition: border ease 3s; */
+    transition-property: border;
+    transition-duration: 1s;
+    transition-timing-function: ease-out;
+    
+}
+
+
+.results {
+    /* container props */
+    flex: 50%;
+    width: 90%;
+    margin: 15px 15px;
+    border: 5px solid green;
+    /* children props */
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-between; */
+    /* align-items: center; */
+
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+.temp, .type {
+    margin: 2em auto;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.temp {
+    flex: 75%;
+    border: 5px solid orangered;
+    /* full height and width of flex portion */
+    width: 100%;
+    margin: auto;
+    /* end */
+
+    /* align-self: center; */
+    /* text-align: center; */
+
+    /* child props */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    /* text props */
+    font-size: 5.5em;
+}
+
+.type {
+    flex: 25%;
+    border: 5px solid blueviolet;
+    /* full height and width of flex portion */
+    width: 100%;
+    margin: auto ;
+    /* end */
+    text-align: center;
+
+    /* child props */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    /* text props */
+    font-size: 3em;
+}
+
+.temp > span , #type-val{
+    font-family: 'Ubuntu', sans-serif;
+    color: azure;
+    text-shadow: 6px -2px black;
+}
