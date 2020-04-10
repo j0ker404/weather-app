@@ -103,13 +103,29 @@ body {
     
 }
 
+.border-effect {
+    flex: 50%;
 
+    width: 100%;
+    margin: 15px 10px;
+    padding: 10px 20px;
+    display: flex;
+    flex-direction: column;
+
+    /* border: 5px solid white; */
+
+    /* display: none; */
+}
 .results {
     /* container props */
     flex: 50%;
     width: 90%;
+    /* flex:100%; */
+    /* width: 100%; */
     margin: 15px 15px;
-    border: 5px solid green;
+    border: 5px solid white;
+    border-radius: 20px;
+
     /* children props */
     display: flex;
     flex-direction: column;
@@ -129,7 +145,7 @@ body {
 
 .temp {
     flex: 75%;
-    border: 5px solid orangered;
+    /* border: 5px solid orangered; */
     /* full height and width of flex portion */
     width: 100%;
     margin: auto;
@@ -149,7 +165,7 @@ body {
 
 .type {
     flex: 25%;
-    border: 5px solid blueviolet;
+    /* border: 5px solid blueviolet; */
     /* full height and width of flex portion */
     width: 100%;
     margin: auto ;
