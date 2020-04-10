@@ -161,6 +161,7 @@ body {
 
     /* text props */
     font-size: 5.5em;
+    text-align: center;
 }
 
 .type {
@@ -185,4 +186,8 @@ body {
     font-family: 'Ubuntu', sans-serif;
     color: azure;
     text-shadow: 6px -2px black;
+}
+
+#temp-unit {
+    display: none;
 }
